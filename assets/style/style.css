@@ -22,3 +22,11 @@ body {
 .list-create {
   background-color: orange;
 }
+
+.box {
+  height: 45px;
+  width: 45px;
+  margin: 0 1rem;
+  border-radius: 5px;
+  background-color: black;
+}

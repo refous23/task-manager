@@ -32,7 +32,7 @@ export class ListsController {
     }
   }
 
-  removeList(id) {
+  removeItem(id) {
     if (window.confirm('Do you want to delete list?')) {
       listsService.removeList(id)
     }

@@ -31,9 +31,10 @@
         <div class="col-4 bg-secondary mx-auto mt-1 text-center round-edges">
           <form onsubmit="app.listsController.createList()" class="p-1">
             <div class="mb-3">
+              <!-- FIXME add two attributes for controlling the length of this input  -->
               <input type="text" class="form-control" name="name" required placeholder="List Name">
               <div id="emailHelp" class="form-text">List Name between 3-15 characters</div>
-              <input type="color" class="form-control form-control-color position-absolute" id="exampleColorInput"
+              <input type="color" class="form-control form-control-color position-absolute" name="color"
                 value="#563d7c">
             </div>
             <button type="submit" class="btn btn-primary">Create</button>

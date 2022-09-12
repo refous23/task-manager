@@ -25,7 +25,7 @@ export class TasksController {
   }
 
   removeItem(id) {
-    if (window.confirm('Remove item?')) {
+    if (window.confirm('Remove task?')) {
       tasksService.removeTask(id)
     }
   }

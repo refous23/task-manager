@@ -5,17 +5,23 @@ export class List {
   constructor(data) {
     this.id = data.id || generateId()
     this.name = data.name
+    this.color = data.color
+    console.log(this.color)
   }
 
 
   get Template() {
     return /*html*/`
     <div class="col-3 text-center post-it elevation-5 m-5">
-      <i onclick="app.itemsController.removeItem('${this.id}')" class="mdi mdi-close text-danger selectable rounded"  title="Remove list"></i>
+      <i onclick="app.listsController.removeItem('${this.id}')" class="mdi mdi-close text-danger selectable rounded"  title="Remove list"></i>
       <div>
         <img src="https://www.pngall.com/wp-content/uploads/2/ThumbTack-PNG-Free-Download.png" width="80" height="80" alt="" class="text-center">
       </div>
-      <h1 class="border-bottom border-dark">${this.name}</h1>
+      <h1 class="border-bottom border-dark d-flex">
+      <!--FIXME add the color to this box--> 
+      <div class="box" style=""></div>
+        ${this.name}
+      </h1>
       <ul class="list-group elevation-2 mb-3">
         ${this.TaskTemplates}
       </ul>

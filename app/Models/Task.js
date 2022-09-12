@@ -12,6 +12,9 @@ export class Task {
   get Template() {
     return/*html*/`
     <li class="d-flex justify-content-between list-group-item">
+      <div class="input-group-text">
+    <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+  </div>
       <span>${this.name}</span>
       <i onclick="app.tasksController.removeItem('${this.id}')" class="mdi mdi-delete-outline text-danger selectable rounded"  title="Remove Task"></i>
     </li>
