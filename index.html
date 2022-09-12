@@ -28,10 +28,40 @@
   <main>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-12">
+        <div class="col-4 bg-secondary mx-auto mt-1 text-center round-edges">
+          <form onsubmit="app.listsController.createList()" class="p-1">
+            <div class="mb-3">
+              <input type="text" class="form-control" name="name" required placeholder="List Name">
+              <div id="emailHelp" class="form-text">List Name between 3-15 characters</div>
+              <input type="color" class="form-control form-control-color position-absolute" id="exampleColorInput"
+                value="#563d7c">
+            </div>
+            <button type="submit" class="btn btn-primary">Create</button>
+          </form>
           <div id="app"></div>
         </div>
       </div>
+
+      <div class="row m-2" id="lists">
+        <!-- <div class="col-4 text-center post-it py-0 elevation-5">
+          <div>
+            <img src="https://www.pngall.com/wp-content/uploads/2/ThumbTack-PNG-Free-Download.png" width="80"
+              height="80" alt="" class="text-center">
+          </div>
+          <h1 class="border-bottom border-dark">Groceries</h1>
+          <ul class="list-group elevation-2 mb-3">
+            <li>
+              <p>coconut water</p>
+              <p>cucumber</p>
+              <p>green apples</p>
+              <p>potatoes</p>
+            </li>
+          </ul>
+          <h4 class="text-start">Total Tasks: 4</h4>
+        </div> -->
+      </div>
+
+
     </div>
   </main>
   <footer class="bg-dark text-light">
