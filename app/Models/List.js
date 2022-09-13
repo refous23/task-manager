@@ -18,8 +18,9 @@ export class List {
         <img src="https://www.pngall.com/wp-content/uploads/2/ThumbTack-PNG-Free-Download.png" width="80" height="80" alt="" class="text-center">
       </div>
       <h1 class="border-bottom border-dark d-flex">
-      <!--FIXME add the color to this box--> 
-      <div class="box" style=""></div>
+      <div class="box" style="background-color: ${this.color}">
+
+      </div>
         ${this.name}
       </h1>
       <ul class="list-group elevation-2 mb-3">
